@@ -1,0 +1,28 @@
+questions = [
+    {"question":"what is capital of India?","answer":"delhi"},
+    {"question":"what is 5*5","answer":"25"},
+    {"question":"who invented python","answer":"Guido van rossum"},
+    {"question":"what is 10+15","answer":"25"},
+    {"question":"which planet is closest to the earth","answer":"mercury"}
+]
+score=0
+print("======================")
+print("welcome to quiz game!")
+print("======================")
+print("")
+for i in range (len(questions)):
+    item = questions[i]
+    print(f"question {i+1}:{item['question']}")
+    user_answer= input("your answer:")
+
+    if user_answer.lower()==item['answer']:
+        print("correct!")
+        score +=1
+
+    else:
+        print(f"Wrong!Answer was {item['answer']}")
+    print("")
+
+print("==============================")
+print(f"your score:{score}out of {len(questions)}")
+print("==============================")

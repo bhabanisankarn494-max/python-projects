@@ -1,0 +1,26 @@
+x=int(input("enter a number "))
+y=int (input("enter a number"))
+choice=input("1.add/n 2subtraction/n 3.multiplication/n 4.power"
+"/n5.modulo/n 6.divide/n 7.float division/n")
+if choice == '1':
+    print(x + y)
+elif choice =='2':
+    print(x-y)
+elif choice=='3':
+    print(x*y)
+elif choice=='4':
+    print(x**y)
+elif choice=='5':
+    print(x % y)
+elif choice=='6':
+    if y==0:
+        print("division is not possible ")
+    else:
+        print(x/y)
+elif choice=='7':
+    if y==0:
+        print("modulus by zero is not possible")
+    else:
+        print(x//y)
+else:
+    print("enter a valid statement")
